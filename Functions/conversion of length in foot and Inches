@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+double input(double num){
+	
+	return num;
+}
+void calcu(double num){
+	
+	cout<<num<<" foot is= "<<num *(0.3048)<<" meters"<<endl;
+    cout<<num<<" Inch is= "<<num *(2.54)<<" centimeters"<<endl;
+}
+ int main ()
+{
+char repeat='Y';
+double no;	
+
+for (int i=0; repeat=='Y' || repeat=='y'; i++){
+cout<<"Enter the length in foot: ";
+cin>>no;
+cout<<"Enter the length in Inch: ";
+cin>>no;
+
+input(no);
+calcu(no);
+cout<<"Are you want to continue this (Y/N): ";
+cin>>repeat;
+}
+return 0;
